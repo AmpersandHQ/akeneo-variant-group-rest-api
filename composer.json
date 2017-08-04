@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ampersand\\Bundle\\VariantGroupRestApi\\": ""
+            "Ampersand\\Bundle\\VariantGroupRestApiBundle\\": ""
         }
     },
     "minimum-stability": "dev"
