@@ -1,0 +1,28 @@
+{
+    "name": "ampersand/akeneo-variant-group-rest-api",
+    "authors": [
+        {
+            "name": "Cristian Quiroz",
+            "email": "cq@amp.co"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/akeneo/pim-community-dev.git",
+            "branch": "1.7.*"
+        }
+    ],
+    "require": {
+        "akeneo/pim-community-dev": "1.7.*",
+        "symfony/config": "*",
+        "symfony/dependency-injection": "*",
+        "symfony/http-kernel": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ampersand\\Bundle\\VariantGroupRestApi\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}

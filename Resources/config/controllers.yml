@@ -1,0 +1,21 @@
+parameters:
+    pim_api.controller.variant_group.class: Pim\Bundle\ApiBundle\Controller\VariantGroupController
+
+services:
+    pim_api.controller.variant_group:
+        class: '%pim_api.controller.variant_group.class%'
+        arguments:
+            - '@pim_catalog.repository.group'
+            - '@pim_internal_api_serializer'
+            - '@pim_catalog.updater.variant_group'
+            - '@pim_catalog.saver.group'
+            - '@pim_catalog.remover.group'
+            - '@pim_user.context.user'
+            - '@pim_catalog.localization.localizer.converter'
+            - '@pim_catalog.validator.product'
+            - '@pim_enrich.normalizer.variant_group_violation'
+            - '@pim_enrich.filter.variant_group_edit_data'
+            - '@pim_enrich.converter.enrich_to_standard.product_value'
+            - '@pim_catalog.factory.group'
+            - '@pim_catalog.builder.product_template'
+            - '%pim_api.configuration%'

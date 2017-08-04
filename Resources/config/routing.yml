@@ -1,0 +1,3 @@
+variant-group:
+    resource: '@PimApiBundle/Resources/config/routing/variant-group.yml'
+    prefix: /rest/v1
