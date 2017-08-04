@@ -126,7 +126,7 @@ class VariantGroupController
         return new JsonResponse(
             $this->normalizer->normalize(
                 $variantGroup,
-                'external_api',
+                'internal_api',
                 $this->userContext->toArray() + ['with_variant_group_values' => true]
             )
         );
@@ -178,7 +178,7 @@ class VariantGroupController
 
         return new JsonResponse($this->normalizer->normalize(
             $variantGroup,
-            'external_api',
+            'internal_api',
             $this->userContext->toArray() + ['with_variant_group_values' => true]
         ));
     }
