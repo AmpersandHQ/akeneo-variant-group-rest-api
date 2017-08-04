@@ -8,7 +8,6 @@ Add the missing variant group rest api endpoint for Akeneo > 1.7.
 Require this Bundle:
 
 ```
-composer config repositories.ampersand-variant-group-rest-api-bundle vcs https://github.com/AmpersandHQ/akeneo-variant-group-rest-api.git
 composer require ampersand/akeneo-variant-group-rest-api
 ```
 
